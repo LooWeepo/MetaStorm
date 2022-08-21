@@ -22,6 +22,7 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.47) 25.63%, rgba(0, 0, 0, 0) 117.23%);
     backdrop-filter: blur(12px);
     padding: 21px 0;
+    animation: header-drop 1s ease-out;
 }
 
 .nav {
@@ -102,4 +103,29 @@
 .nav__buttons-link a {
     text-decoration: none;
     color: #FFF;
+    font-family: var(--JM);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.nbl__wallet {
+    padding: 9px 21px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+.nbl__wallet:hover {
+    transform: rotateY(50deg);
+}
+
+@keyframes header-drop {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
 }

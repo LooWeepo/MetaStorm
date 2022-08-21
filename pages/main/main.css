@@ -36,19 +36,29 @@
     align-items: center;
 }
 
-.nav__list-item a {
-    text-decoration: none;
+.nav__list-link {
     color: #FFF;
-}
-
-.nav__list-item {
-    color: #fffffe;
-    border-bottom: 3px solid #FFF;
-    border-top: 3px solid #FFF;
+    text-decoration: none;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
     border-radius: 5px;
+    padding: 2px 0;
     transition: all 0.2s;
 }
 
-.nav__list-item:hover {
-    padding: 3px 0;
+.active {
+    border-color: #FFA12A;
+    padding: 10px 0;
+    color: #FFF61B;
+}
+
+.nav__list-link:hover {
+    padding: 10px 0;
+    border-color: #FFA12A;
+}
+
+.nav__social-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }

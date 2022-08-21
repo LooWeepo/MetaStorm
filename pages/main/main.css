@@ -32,7 +32,7 @@
 .nav__list {
     list-style: none;
     display: flex;
-    gap: 100px;
+    gap: 80px;
     align-items: center;
 }
 
@@ -44,6 +44,11 @@
     border-radius: 5px;
     padding: 2px 0;
     transition: all 0.2s;
+    font-family: var(--JM);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
 }
 
 .active {
@@ -61,4 +66,40 @@
     display: flex;
     gap: 30px;
     align-items: center;
+}
+
+.nsl__background {
+    background: #111110b6;
+    border-radius: 5px;
+    width: 45px;
+    height: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.nsl__background img {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.nsl__background:hover {
+    height: 45px;
+}
+
+.nsl__background:hover .nsl__link-img {
+    opacity: 1;
+}
+
+.nav__buttons {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav__buttons-link a {
+    text-decoration: none;
+    color: #FFF;
 }
